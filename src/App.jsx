@@ -1,22 +1,22 @@
-import { useState } from "react";
-import reactLogo from "./assets/react.svg";
+import HEADERDESKTOP from "./assets/image-header-desktop.jpg";
+import HEADERMOBILE from "./assets/image-header-mobile.jpg";
 import "./App.css";
 
 function App() {
   return (
-    <body>
-      <main className="flex flex-row width-full max-w-[1440px]">
-        <section class="text-content">
-          <h1>
+    <body className="h-screen flex justify-center items-center">
+      <main className="flex lg:flex-row flex-col-reverse w-fit lg:h-2/3 h-[90%] m-auto">
+        <section class="text-content flex flex-col items-center w-[25rem] lg:h-full m-auto p-8 lg:rounded-l-xl lg:rounded-br-none  rounded-b-xl">
+          <h1 className="font-bold">
             Get <span class="accent">insights</span> that help your business
             grow.
           </h1>
-          <p>
+          <p className="my-8">
             Discover the benefits of data analytics and make better decisions
             regarding revenue, customer experience, and overall efficiency.
           </p>
 
-          <div class="stats">
+          <div class="stats flex lg:flex-row flex-col m-auto">
             <div>
               <h3>10k+</h3>
               <h3 class="stat-heading">companies</h3>
@@ -31,15 +31,21 @@ function App() {
             </div>
           </div>
         </section>
-        <section class="aside-bg"></section>
+        <section class="aside-bg w-[25rem] lg:h-full h-[13rem] lg:rounded-r-xl lg:rounded-lr-none  rounded-t-xl object-cover -z-10">
+          <picture>
+            <img
+              className="lg:hidden object-cover opacity-70 object-center rounded-t-xl"
+              src={HEADERMOBILE}
+              alt="header mobile"
+            />
+            <img
+              className="lg:block hidden object-cover opacity-70 h-full rounded-r-xl"
+              src={HEADERDESKTOP}
+              alt="header desktop"
+            />
+          </picture>
+        </section>
       </main>
-      <div class="attribution">
-        Challenge by
-        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">
-          Frontend Mentor.
-        </a>
-        Coded by <a href="#">Joakim Villo</a>.
-      </div>
     </body>
   );
 }
