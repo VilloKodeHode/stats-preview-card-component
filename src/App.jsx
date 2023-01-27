@@ -5,8 +5,8 @@ import "./App.css";
 function App() {
   return (
     <body className="h-screen flex justify-center items-center">
-      <main className="flex lg:flex-row flex-col-reverse w-fit lg:h-2/3 h-[90%] m-auto">
-        <section class="text-content flex flex-col items-center w-[25rem] lg:h-full m-auto p-8 lg:rounded-l-xl lg:rounded-br-none  rounded-b-xl">
+      <main className="flex lg:flex-row flex-col-reverse justify-center lg:w-[90%] w-fit lg:h-2/3 h-[90%] m-auto">
+        <section class="text-content flex flex-col items-center lg:h-full lg:w-[30rem] w-[25rem] p-8 lg:rounded-l-xl lg:rounded-br-none rounded-b-xl">
           <h1 className="font-bold">
             Get <span class="accent">insights</span> that help your business
             grow.
@@ -31,7 +31,7 @@ function App() {
             </div>
           </div>
         </section>
-        <section class="aside-bg w-[25rem] lg:h-full h-[13rem] lg:rounded-r-xl lg:rounded-lr-none  rounded-t-xl object-cover -z-10">
+        <section class="aside-bg lg:w-[30rem] w-[25rem] lg:h-full h-[13rem] lg:rounded-r-xl lg:rounded-lr-none  rounded-t-xl object-cover -z-10">
           <picture>
             <img
               className="lg:hidden object-cover opacity-70 object-center rounded-t-xl"

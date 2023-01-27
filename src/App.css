@@ -54,14 +54,16 @@ h3 {
 .stats {
   text-transform: uppercase;
   justify-content: space-around;
+  font-size: 20px;
+  font-weight: 700;
 }
 
 .stat-heading {
   color: hsla(0, 0%, 100%, 0.75);
   font-size: 13px;
   font-weight: 400;
-  /* margin-right: 80px; */
   letter-spacing: 1.2px;
+  margin-bottom: 10px;
 }
 
 .last-stat {
