@@ -1,0 +1,93 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url(https://fonts.google.com/specimen/Inter);
+@import url(https://fonts.google.com/specimen/Lexend+Deca);
+
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+h1,
+h2 {
+  color: hsl(0, 0%, 100%);
+}
+
+h1,
+h2,
+p {
+  font-family: "Inter", sans-serif;
+}
+
+p {
+  color: hsla(0, 0%, 100%, 0.75);
+  font-size: 15px;
+  line-height: 1.6;
+  letter-spacing: 0.5px;
+}
+
+h1 {
+  font-size: 45px;
+}
+
+h3 {
+  color: hsl(0, 0%, 100%);
+  font-family: "Lexend Deca", sans-serif;
+  margin: 5px;
+  font-size: 22px;
+}
+
+.accent {
+  color: hsl(277, 64%, 61%);
+}
+
+.aside-bg {
+  min-width: 720px;
+  min-height: 600px;
+  background-image: url(/images/image-header-desktop.jpg);
+  background-color: hsla(277, 64%, 61%, 1);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-blend-mode: multiply;
+  border-radius: 0 10px 10px 0;
+}
+
+.text-content {
+  background-color: hsl(244, 38%, 16%);
+  border-radius: 10px 0 0 10px;
+  padding: 100px;
+}
+
+.stats {
+  display: flex;
+  flex-direction: row;
+  padding: 50px 0 0 0;
+  text-transform: uppercase;
+  justify-content: space-around;
+}
+
+.stat-heading {
+  color: hsla(0, 0%, 100%, 0.75);
+  font-size: 13px;
+  font-weight: 400;
+  margin-right: 80px;
+  letter-spacing: 1.2px;
+}
+
+.last-stat {
+  margin-right: 0;
+}
+
+.attribution {
+  color: white;
+  text-align: center;
+  justify-content: center;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 48%);
+}
